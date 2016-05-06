@@ -15,6 +15,6 @@ if [[ -e $PLAN9/bin/plumber ]]; then
    [[ $? -ne 0 ]] && plumber 2>/dev/null
 
    # first rule wins, so make sure files are named in proper order
-   cat $ZSH/plan9/*.plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules >/dev/null
+   cat $ZPLUG_HOME/repos/gchpaco/plan9-zsh/*.plumbing $PLAN9/plumb/initial.plumbing | 9p write plumb/rules >/dev/null
 fi
 
